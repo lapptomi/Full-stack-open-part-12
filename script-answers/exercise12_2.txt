@@ -1,0 +1,99 @@
+Script started on 2021-10-21 16:47:30+03:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="149" LINES="24"]
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m s[Kdocker run -it ubuntu bash
+[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K
+7b1a6ab2e44d: Pulling fs layer 
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [>                                                  ]  293.2kB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [===>                                               ]  1.768MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=====>                                             ]  3.242MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [========>                                          ]  4.713MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [==========>                                        ]  6.175MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=============>                                     ]  7.646MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [===============>                                   ]   9.12MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [==================>                                ]  10.58MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=====================>                             ]  12.05MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=======================>                           ]  13.51MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [==========================>                        ]  14.99MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [============================>                      ]  16.47MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [===============================>                   ]  17.94MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=================================>                 ]  19.41MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [====================================>              ]  20.88MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=======================================>           ]  22.35MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=========================================>         ]  23.82MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [============================================>      ]  25.27MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [==============================================>    ]  26.76MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Downloading [=================================================> ]  28.23MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Verifying Checksum 
+[1B[1A[2K
+7b1a6ab2e44d: Download complete 
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [>                                                  ]  294.9kB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [======>                                            ]  3.539MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [============>                                      ]  7.078MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [==================>                                ]  10.32MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [======================>                            ]  12.68MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [============================>                      ]  16.52MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [====================================>              ]  20.64MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [==========================================>        ]  24.18MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [================================================>  ]  27.43MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Extracting [==================================================>]  28.57MB/28.57MB
+[1B[1A[2K
+7b1a6ab2e44d: Pull complete 
+[1BDigest: sha256:626ffe58f6e7566e00254b638eb7e0f3b11d4da9675088f4781a50ae288f3322
+Status: Downloaded newer image for ubuntu:latest
+]0;root@f15f45d584a7: /root@f15f45d584a7:/# 
+[K]0;root@f15f45d584a7: /root@f15f45d584a7:/# ls
+[0m[01;36mbin[0m  [01;34mboot[0m  [01;34mdev[0m  [01;34metc[0m  [01;34mhome[0m  [01;36mlib[0m  [01;36mlib32[0m  [01;36mlib64[0m  [01;36mlibx32[0m  [01;34mmedia[0m  [01;34mmnt[0m  [01;34mopt[0m  [01;34mproc[0m  [01;34mroot[0m  [01;34mrun[0m  [01;36msbin[0m  [01;34msrv[0m  [01;34msys[0m  [30;42mtmp[0m  [01;34musr[0m  [01;34mvar[0m
+]0;root@f15f45d584a7: /root@f15f45d584a7:/# cd usr
+]0;root@f15f45d584a7: /usrroot@f15f45d584a7:/usr# ls
+[0m[01;34mbin[0m  [01;34mgames[0m  [01;34minclude[0m  [01;34mlib[0m  [01;34mlib32[0m  [01;34mlib64[0m  [01;34mlibx32[0m  [01;34mlocal[0m  [01;34msbin[0m  [01;34mshare[0m  [01;34msrc[0m
+]0;root@f15f45d584a7: /usrroot@f15f45d584a7:/usr# cd src
+]0;root@f15f45d584a7: /usr/srcroot@f15f45d584a7:/usr/src# ls
+]0;root@f15f45d584a7: /usr/srcroot@f15f45d584a7:/usr/src# mkdir app
+]0;root@f15f45d584a7: /usr/srcroot@f15f45d584a7:/usr/src# ls
+[0m[01;34mapp[0m
+]0;root@f15f45d584a7: /usr/srcroot@f15f45d584a7:/usr/src# cd app
+]0;root@f15f45d584a7: /usr/src/approot@f15f45d584a7:/usr/src/app# ls
+]0;root@f15f45d584a7: /usr/src/approot@f15f45d584a7:/usr/src/app# touch ine dex.js
+]0;root@f15f45d584a7: /usr/src/approot@f15f45d584a7:/usr/src/app# ls
+index.js
+]0;root@f15f45d584a7: /usr/src/approot@f15f45d584a7:/usr/src/app# exit
+exit
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m exit
+[?2004l
+exit
+
+Script done on 2021-10-21 16:49:21+03:00 [COMMAND_EXIT_CODE="0"]
