@@ -1,0 +1,206 @@
+Script started on 2021-10-25 20:55:43+03:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="171" LINES="20"]
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m docker ps -a
+[?2004l
+CONTAINER ID   IMAGE            COMMAND                  CREATED       STATUS                    PORTS                                         NAMES
+6812739d0812   redis            "docker-entrypoint.s…"   5 hours ago   Up 14 minutes             0.0.0.0:6379->6379/tcp, :::6379->6379/tcp     todo-backend_redis_1
+9eec5f30de9a   mongo            "docker-entrypoint.s…"   2 days ago    Up 14 minutes             0.0.0.0:3456->27017/tcp, :::3456->27017/tcp   todo-backend_mongo_1
+242e5a51fd48   express-server   "docker-entrypoint.s…"   3 days ago    Exited (137) 3 days ago                                                 todo-backend_app_1
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m docker exec 68-68i68t68 68[C[C [K
+[?2004l
+"docker exec" requires at least 2 arguments.
+See 'docker exec --help'.
+
+Usage:  docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
+Run a command in a running container
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m docker exec -it 68 bash
+[?2004l
+[?2004hroot@6812739d0812:/data# 
+[Kroot@6812739d0812:/data# ls
+[?2004l
+dump.rdb
+[?2004hroot@6812739d0812:/data# redis-cli
+[?2004l
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> K
+[17C
+[0K127.0.0.1:6379> KE
+[18C
+[0K127.0.0.1:6379> KEY
+[19C
+[0K127.0.0.1:6379> KEYS[0;90;49m pattern[0m
+[20C
+[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m
+[21C
+[0K127.0.0.1:6379> KEYS *[0;90;49m [0m
+[22C
+[0K127.0.0.1:6379> KEYS *
+[22C
+1) "todoCount"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> G
+[17C
+[0K127.0.0.1:6379> GE
+[18C
+[0K127.0.0.1:6379> GET[0;90;49m key[0m
+[19C
+[0K127.0.0.1:6379> GET [0;90;49mkey[0m
+[20C
+[0K127.0.0.1:6379> GET t[0;90;49m [0m
+[21C
+[0K127.0.0.1:6379> GET to[0;90;49m [0m
+[22C
+[0K127.0.0.1:6379> GET tod[0;90;49m [0m
+[23C
+[0K127.0.0.1:6379> GET todo[0;90;49m [0m
+[24C
+[0K127.0.0.1:6379> GET todoC[0;90;49m [0m
+[25C
+[0K127.0.0.1:6379> GET todoCo[0;90;49m [0m
+[26C
+[0K127.0.0.1:6379> GET todoCou[0;90;49m [0m
+[27C
+[0K127.0.0.1:6379> GET todoCoun[0;90;49m [0m
+[28C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> GET todoCount
+[29C
+"9002"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> S
+[17C
+[0K127.0.0.1:6379> SE
+[18C
+[0K127.0.0.1:6379> SET[0;90;49m key value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[19C
+[0K127.0.0.1:6379> SET [0;90;49mkey value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[20C
+[0K127.0.0.1:6379> SET t[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[21C
+[0K127.0.0.1:6379> SET to[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[22C
+[0K127.0.0.1:6379> SET tod[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[23C
+[0K127.0.0.1:6379> SET todo[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[24C
+[0K127.0.0.1:6379> SET todoC[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[25C
+[0K127.0.0.1:6379> SET todoCo[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[26C
+[0K127.0.0.1:6379> SET todoCou[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[27C
+[0K127.0.0.1:6379> SET todoCoun[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[28C
+[0K127.0.0.1:6379> SET todoCount[0;90;49m value [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[29C
+[0K127.0.0.1:6379> SET todoCount [0;90;49mvalue [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[30C
+[0K127.0.0.1:6379> SET todoCount 9[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[31C
+[0K127.0.0.1:6379> SET todoCount 90[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[32C
+[0K127.0.0.1:6379> SET todoCount 900[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[33C
+[0K127.0.0.1:6379> SET todoCount 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[34C
+[0K127.0.0.1:6379> SET todoCount 9001
+[34C
+OK
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> SET todoCount 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[34C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> GET todoCount
+[29C
+"9002"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> 
+[16C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> GET todoCount
+[29C
+"9003"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> D
+[17C
+[0K127.0.0.1:6379> DE
+[18C
+[0K127.0.0.1:6379> DEL[0;90;49m key [key ...][0m
+[19C
+[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m
+[20C
+[0K127.0.0.1:6379> DEL t[0;90;49m [key ...][0m
+[21C
+[0K127.0.0.1:6379> DEL to[0;90;49m [key ...][0m
+[22C
+[0K127.0.0.1:6379> DEL tod[0;90;49m [key ...][0m
+[23C
+[0K127.0.0.1:6379> DEL todo[0;90;49m [key ...][0m
+[24C
+[0K127.0.0.1:6379> DEL todoC[0;90;49m [key ...][0m
+[25C
+[0K127.0.0.1:6379> DEL todoCo[0;90;49m [key ...][0m
+[26C
+[0K127.0.0.1:6379> DEL todoCou[0;90;49m [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL todoCoun[0;90;49m [key ...][0m
+[28C
+[0K127.0.0.1:6379> DEL todoCount[0;90;49m [key ...][0m
+[29C
+[0K127.0.0.1:6379> DEL todoCount
+[29C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL todoCount[0;90;49m [key ...][0m
+[29C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> SET todoCount 9001[0;90;49m [EX seconds|PX milliseconds|EXAT timestamp|PXAT milliseconds-timestamp|KEEPTTL] [NX|XX] [GET][0m
+[34C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> KEYS *[0;90;49m [0m
+[22C
+[0K127.0.0.1:6379> KEYS *
+[22C
+(empty array)
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> KEYS *[0;90;49m [0m
+[22C
+[0K127.0.0.1:6379> DEL todoCount[0;90;49m [key ...][0m
+[29C
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> GET todoCount
+[29C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET todoCount[0;90;49m [0m
+[29C
+[0K127.0.0.1:6379> GET todoCount
+[29C
+"2"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> e
+[17C
+[0K127.0.0.1:6379> ex
+[18C
+[0K127.0.0.1:6379> exi
+[19C
+[0K127.0.0.1:6379> exit
+[20C
+[0K127.0.0.1:6379> exit
+[20C
+[?2004hroot@6812739d0812:/data# exit
+[?2004l
+exit
+]0;root@Potato-PC:/home/lapptomi[?2004h[01;31m[Potato-PC[01;36m lapptomi[01;31m]#[00m exit
+[?2004l
+exit
+
+Script done on 2021-10-25 20:58:47+03:00 [COMMAND_EXIT_CODE="0"]

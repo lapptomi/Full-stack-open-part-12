@@ -16,8 +16,8 @@ router.post('/', async (req, res) => {
     done: false
   })
 
-  const todos = await Todo.find({})
-  await redis.setAsync('todoCount', todos.length);
+  const todoCount = await redis.getAsync('todoCount');
+  await redis.setAsync('todoCount', Number(todoCount) + 1);
 
   res.send(todo);
 });
