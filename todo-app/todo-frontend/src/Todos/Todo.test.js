@@ -3,6 +3,7 @@ import '@testing-library/jest-dom/extend-expect'
 import { render } from '@testing-library/react'
 
 test('renders content', () => {
+  
   const todo = {
     text: 'Random-todo-component',
     done: true
